@@ -1,4 +1,6 @@
 
+import 'package:user_repository/src/entities/entities.dart';
+
 class AppUser {
   String userId;
   String email;
@@ -32,7 +34,7 @@ class AppUser {
   // Json map -> class
   static AppUser fromEntity(AppUserEntity entity) {
     return AppUser(
-      userId: entity.,
+      userId: entity.userId,
       email: entity.email,
       name: entity.name,
       hasActiveCart: entity.hasActiveCart
