@@ -1,3 +1,5 @@
+import 'package:user_repository/src/models/models.dart';
+
 abstract class UserRepository {
   Stream<AppUser?> get user;
   Future<AppUser> signUp(AppUser user, String password);
